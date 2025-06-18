@@ -1,7 +1,24 @@
-
-.columns > div {
+/* --- Base .columns styles --- */
+.columns {
+  background: #fff;
+  padding: 60px 0 72px;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.columns .columns-img-col {
+  display: none;
+}
+
+.columns > div {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .columns img {
@@ -9,6 +26,13 @@
 }
 
 .columns > div > div {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   order: 1;
 }
 
@@ -20,19 +44,65 @@
   display: block;
 }
 
-@media (width >= 900px) {
-  .columns > div {
-    align-items: center;
-    flex-direction: unset;
-    gap: 24px;
-  }
-
-  .columns > div > div {
-    flex: 1;
-    order: unset;
-  }
+.columns h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 36px;
+  letter-spacing: 0.01em;
+  line-height: 1.18;
 }
 
+.columns p {
+  font-size: 1.08rem;
+  color: #7d7d7d;
+  max-width: 540px;
+  margin: 0 0 32px;
+  line-height: 1.5;
+}
+
+.columns .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.columns .button,
+.columns .button-container .button {
+  background: #3982A3;
+  color: #fff;
+  padding: 18px 48px;
+  border-radius: 32px;
+  font-size: 1.07rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0;
+  display: inline-block;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  transition: background 0.2s;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  min-width: unset;
+  max-width: unset;
+  width: auto;
+  align-self: center;
+  text-align: center;
+}
+
+.columns .button:hover,
+.columns .button:focus,
+.columns .button-container .button:hover,
+.columns .button-container .button:focus {
+  background: #296a8a;
+}
+
+/* --- .columns3 modifier styles --- */
 .columns.columns3 {
   max-width: 1200px;
   margin: 0 auto;
@@ -41,11 +111,24 @@
   box-sizing: border-box;
 }
 
+.columns.columns3 .columns-img-col {
+  flex: 0 0 320px;
+  max-width: 320px;
+  width: 320px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-top: 0;
+}
+
 .columns.columns3 > div {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 88px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .columns.columns3 > div > div {
@@ -57,16 +140,13 @@
   justify-content: flex-start;
   padding-right: 0;
   margin-top: 0;
+  align-items: flex-start;
+  text-align: initial;
+  width: auto;
 }
 
-.columns.columns3 .columns-img-col {
-  flex: 0 0 320px;
-  max-width: 320px;
-  width: 320px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  margin-top: 0;
+.columns.columns3 > div > .columns-img-col {
+  order: 0;
 }
 
 .columns.columns3 .columns-img-col img {
@@ -100,11 +180,6 @@
   background: repeating-linear-gradient(
     to right,
     #1f7aa7 0 5px,
-    transparent 0 11px
-  );
-  mask-image: repeating-linear-gradient(
-    to right,
-    black 0 5px,
     transparent 0 11px
   );
   mask-image: repeating-linear-gradient(
@@ -177,7 +252,36 @@
   text-decoration: underline;
 }
 
+@media (width >= 900px) {
+  .columns > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 24px;
+  }
+
+  .columns > div > div {
+    flex: 1;
+    order: unset;
+  }
+}
+
 @media (width <= 900px) {
+  .columns {
+    padding: 32px 0 44px;
+  }
+
+  .columns > div,
+  .columns > div > div {
+    max-width: 96vw;
+    padding: 0 2vw;
+  }
+
+  .columns .button,
+  .columns .button-container .button {
+    padding: 14px 18px;
+    font-size: 1rem;
+  }
+
   .columns.columns3 {
     padding: 14px 0;
   }
