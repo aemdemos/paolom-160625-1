@@ -2883,23 +2883,17 @@
       ]
     },
     {
-      "name": "Columns",
+      "name": "Cta",
       "cluster": 12,
-      "source": "Columns",
-      "target": "Columns (columns12)",
-      "key": "columns12",
+      "source": "Cta",
+      "target": "Cta",
+      "key": "cta",
       "instances": [
         {
           "url": "https://www.pmiscience.com/en/about/",
           "urlHash": "82d6d134b7f9922a12e3445e563c6388f4aaabdc",
           "uuid": "82d6d134-10-9efa1ed033bb63b411698ee75ac1a3184a71d200",
           "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[10]"
-        },
-        {
-          "url": "https://www.pmiscience.com/",
-          "urlHash": "8c622c813d6f5f185dd7ff3b66b0005a1164ff48",
-          "uuid": "8c622c81-11-69ce9898ce1fc8b768b17b8b65f1c5399c02ee98",
-          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[7]"
         }
       ]
     },
