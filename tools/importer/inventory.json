@@ -1630,12 +1630,6 @@
       "key": "columns3",
       "instances": [
         {
-          "url": "https://www.pmiscience.com/en/about/pmiscience-booklet/",
-          "urlHash": "396efee598773a362065cd10c20823997e06d418",
-          "uuid": "396efee5-10-eaf537a05ea5035e4a112b571aa4da6fe7ce0b78",
-          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[6]"
-        },
-        {
           "url": "https://www.pmiscience.com/en/about/",
           "urlHash": "82d6d134b7f9922a12e3445e563c6388f4aaabdc",
           "uuid": "82d6d134-05-133c8dd15c4442a17a138a3716f2d4297357f272",
@@ -1644,14 +1638,14 @@
         {
           "url": "https://www.pmiscience.com/en/about/",
           "urlHash": "82d6d134b7f9922a12e3445e563c6388f4aaabdc",
-          "uuid": "82d6d134-06-eaf537a05ea5035e4a112b571aa4da6fe7ce0b78",
-          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[6]"
-        },
-        {
-          "url": "https://www.pmiscience.com/en/about/",
-          "urlHash": "82d6d134b7f9922a12e3445e563c6388f4aaabdc",
           "uuid": "82d6d134-07-69ce9898ce1fc8b768b17b8b65f1c5399c02ee98",
           "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[7]"
+        },
+        {
+          "url": "https://www.pmiscience.com/en/about/pmiscience-booklet/",
+          "urlHash": "396efee598773a362065cd10c20823997e06d418",
+          "uuid": "396efee5-10-eaf537a05ea5035e4a112b571aa4da6fe7ce0b78",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[6]"
         },
         {
           "url": "https://www.pmiscience.com/en/about/pmi-smoke-free-future-progress/",
@@ -4626,27 +4620,24 @@
       ]
     },
     {
-      "name": "Hero",
+      "name": "Columns",
       "cluster": 41,
-      "source": "Hero",
-      "target": "Hero (hero41)",
-      "key": "hero41",
+      "source": "Columns",
+      "target": "Columns (columns41)",
+      "key": "columns41",
       "instances": [
         {
           "url": "https://www.pmiscience.com/en/about/",
           "urlHash": "82d6d134b7f9922a12e3445e563c6388f4aaabdc",
           "uuid": "82d6d134-04-3aa63ffca1c67d90158278207a6fccaeb9254ec8",
           "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]"
-        }
-      ]
-    },
-    {
-      "name": "Cards",
-      "cluster": 42,
-      "source": "Cards",
-      "target": "Cards (cards42)",
-      "key": "cards42",
-      "instances": [
+        },
+        {
+          "url": "https://www.pmiscience.com/en/about/",
+          "urlHash": "82d6d134b7f9922a12e3445e563c6388f4aaabdc",
+          "uuid": "82d6d134-06-eaf537a05ea5035e4a112b571aa4da6fe7ce0b78",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[6]"
+        },
         {
           "url": "https://www.pmiscience.com/en/about/",
           "urlHash": "82d6d134b7f9922a12e3445e563c6388f4aaabdc",
