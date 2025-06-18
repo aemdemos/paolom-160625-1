@@ -2883,11 +2883,11 @@
       ]
     },
     {
-      "name": "Hero",
+      "name": "Columns",
       "cluster": 12,
-      "source": "Hero",
-      "target": "Hero (hero12)",
-      "key": "hero12",
+      "source": "Columns",
+      "target": "Columns (columns12)",
+      "key": "columns12",
       "instances": [
         {
           "url": "https://www.pmiscience.com/en/about/",
