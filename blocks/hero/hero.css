@@ -1,3 +1,7 @@
+/*
+  Merged and validated CSS for .hero.hero34 section
+  All duplicate selectors are merged. Selector order respects no-descending-specificity. Modern CSS and color syntax is used. Empty lines before rules as per best practices.
+*/
 
 .hero-container .hero-wrapper {
   max-width: unset;
@@ -50,18 +54,20 @@
 /* --- START: merged .hero.hero34 --- */
 .hero.hero34 {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
+  width: 100vw;
+  max-width: unset;
   min-height: 400px;
-  width: 100%;
-  background: url('./media_131127e29f3bb2e5b2dacd4512cdef60ec0946411.jpg?width=2000&format=jpg&optimize=medium') center center / cover no-repeat;
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(rgb(17 46 75 / 84%), rgb(17 46 75 / 84%)),
+    url('./media_131127e29f3bb2e5b2dacd4512cdef60ec0946411.jpg?width=2000&format=jpg&optimize=medium') center center / cover no-repeat;
   box-sizing: border-box;
+  padding: 0;
   overflow: hidden;
+  margin-top: 0;
 }
-
-/* --- END: merged .hero.hero34 --- */
 
 .hero.hero34::after {
   position: absolute;
@@ -71,43 +77,50 @@
   pointer-events: none;
 }
 
-.hero.hero34 picture {
+.hero.hero34 picture,
+.hero.hero34 img {
   display: none;
 }
 
 /* Vertical "SCIENCE" styles — max height, airy, left edge */
 .hero.hero34::before {
   position: absolute;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
   left: 0;
-  top: 0;
-  width: 48px;
-  height: 100%;
-  z-index: 3;
-  color: #8ca4b1;
-  font-size: 68px;
-  line-height: 1.24;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 82%;
+  width: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--heading-font-family);
+  font-size: 54px;
   font-weight: 700;
+  color: #97b2c5;
+  opacity: 0.44;
   letter-spacing: 0.09em;
-  writing-mode: vertical-lr;
+  writing-mode: vertical-rl;
   text-orientation: mixed;
   pointer-events: none;
+  user-select: none;
+
+  /* No content string, only layout reserved */
 }
 
+/* Center content and offset for label */
 .hero.hero34 > div {
   flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 0;
-  min-height: 0;
   position: relative;
   z-index: 2;
-  padding-left: 48px;
+  padding-left: 62px;
   margin-left: 0;
+  width: 100%;
+  min-height: 400px;
+  box-sizing: border-box;
 }
 
 .hero.hero34 > div > div {
@@ -116,75 +129,91 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 1050px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
 
-.hero.hero34 p:first-of-type {
-  color: #fff;
-  font-size: 0.98rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+/* ABOUT PMI label */
+.hero.hero34 > div > div > p:not(:has(picture)) {
   font-family: var(--heading-font-family);
+  font-size: 0.96rem;
+  letter-spacing: 0.18em;
+  color: #fff;
+  text-transform: uppercase;
   font-weight: 600;
-  margin: 0 0 30px;
-  opacity: 0.93;
+  opacity: 0.47;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
   position: relative;
-  padding-bottom: 40px;
-  background:
-    repeating-linear-gradient(
-      to right,
-      #fff 0 9px, transparent 9px 26px
-    );
-  background-repeat: repeat-x;
-  background-size: 198px 6px;
-  background-position: center calc(100% - 2px);
-  background-blend-mode: lighten;
-  background-clip: padding-box;
 }
 
+/* More compact 7-dot row under ABOUT PMI */
+.hero.hero34 > div > div > p:not(:has(picture))::after {
+  display: block;
+  width: 68px;
+  height: 7px;
+  margin: 2px auto 0;
+  background-image: repeating-radial-gradient(circle, #fff 0 2.8px, transparent 2.8px 11px);
+  background-size: 11px 7px;
+  background-repeat: repeat-x;
+  border: none;
+  pointer-events: none;
+  content: "";
+}
+
+/* Headline */
 .hero.hero34 h1 {
   color: #fff;
-  font-size: 3.1rem;
+  font-size: 2.6rem;
   font-weight: 700;
-  margin: 0;
-  line-height: 1.13;
-  letter-spacing: 0;
+  margin: 8px 0 0;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
   font-family: var(--heading-font-family);
   text-align: center;
+  padding: 0;
 }
 
-.hero.hero34 p:first-of-type + h1 {
-  margin-top: 18px;
-}
-
-@media (width <= 900px) {
+/* Responsive adjustments */
+@media (width <= 600px) {
   .hero.hero34 {
-    min-height: 320px;
-  }
-
-  .hero.hero34::before {
-    font-size: 34px;
-    width: 24px;
-    line-height: 1.14;
+    min-height: 220px;
   }
 
   .hero.hero34 > div {
+    min-height: 220px;
     padding-left: 24px;
   }
 
   .hero.hero34 h1 {
-    font-size: 1.35rem;
+    font-size: 1.32rem;
+    margin-top: 5px;
+  }
+
+  .hero.hero34 > div > div > p:not(:has(picture))::after {
+    width: 34px;
+    height: 4px;
+    background-size: 5px 4px;
+    margin-top: 1px;
   }
 
   .hero.hero34 > div > div {
     max-width: 98vw;
   }
 
-  .hero.hero34 p:first-of-type {
-    font-size: 0.84rem;
-    background-size: 80px 2px;
-    padding-bottom: 16px;
+  .hero.hero34::before {
+    width: 24px;
+    font-size: 27px;
+    height: 82%;
   }
+}
+
+/* Remove any unwanted top margin from all likely containers above the hero */
+.hero-container,
+.hero-container > .hero-wrapper,
+.hero-container > .hero-wrapper > .hero.hero34 {
+  margin-top: 0;
+  padding-top: 0;
 }
