@@ -38,7 +38,6 @@
   margin-left: auto;
   margin-right: auto;
   padding: 64px 0 72px;
-  background: #fff;
   box-sizing: border-box;
 }
 
@@ -190,4 +189,12 @@
     max-width: 100%;
     height: auto;
   }
+}
+
+.columns.round-image > div > div.columns-img-col {
+  aspect-ratio: 1 / 1;
+  border: 20px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
 }
