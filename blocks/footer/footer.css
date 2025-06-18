@@ -1,12 +1,16 @@
 footer {
-  background-color: var(--light-color);
+  background-color: #f6f8f9;
   font-size: var(--body-font-size-xs);
 }
 
 footer .footer > div {
   margin: auto;
-  max-width: 1200px;
+  max-width: 1440px;
   padding: 40px 24px 24px;
+}
+
+footer .footer > div > div:last-of-type {
+  background-color: #edf2f4;
 }
 
 footer .footer p {

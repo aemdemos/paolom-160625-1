@@ -4,6 +4,7 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
+  border-bottom: 1px solid #eee;
 }
 
 header nav {
@@ -15,10 +16,13 @@ header nav {
   align-items: center;
   gap: 0 24px;
   margin: auto;
-  max-width: 1248px;
+  max-width: 1440px;
   height: var(--nav-height);
   padding: 0 24px;
   font-family: var(--body-font-family);
+  text-transform: uppercase;
+  color: #696d6f;
+  letter-spacing: 2px;
 }
 
 header nav[aria-expanded='true'] {
@@ -145,7 +149,7 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 232px;
   height: auto;
 }
 
@@ -166,7 +170,7 @@ header nav[aria-expanded='true'] .nav-sections {
 header nav .nav-sections ul {
   list-style: none;
   padding-left: 0;
-  font-size: var(--body-font-size-s);
+  font-size: 12px;
 }
 
 header nav .nav-sections ul > li {
@@ -222,6 +226,7 @@ header nav .nav-sections ul > li > ul > li {
     display: flex;
     gap: 24px;
     margin: 0;
+    justify-content: end;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {

@@ -28,7 +28,7 @@
   --heading-font-size-m: 23px;
   --heading-font-size-s: 14px;
   --heading-font-size-xs: 10.72px;
-  --nav-height: 64px;
+  --nav-height: 102px;
   --header-height: var(--nav-height);
 }
 
@@ -260,7 +260,7 @@ main>.section {
 }
 
 main>.section>div {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: auto;
   padding: 0 24px;
 }
