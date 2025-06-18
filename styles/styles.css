@@ -19,7 +19,7 @@
   --link-hover-color: #1d3ecf;
   --body-font-family: "Open Sans", "Open Sans Fallback", "sans-serif";
   --heading-font-family: "Open Sans", "Open Sans Fallback", "sans-serif";
-  --body-font-size-m: 23px;
+  --body-font-size-m: 16px;
   --body-font-size-s: 14px;
   --body-font-size-xs: 10.72px;
   --heading-font-size-xxl: 32px;
@@ -90,11 +90,11 @@
 
 @media (width>=900px) {
   :root {
-    --body-font-size-m: 23px;
+    --body-font-size-m: 16px;
     --body-font-size-s: 14px;
     --body-font-size-xs: 10.72px;
     --heading-font-size-xxl: 32px;
-    --heading-font-size-xl: 32px;
+    --heading-font-size-xl: 24px;
     --heading-font-size-l: 16px;
     --heading-font-size-m: 23px;
     --heading-font-size-s: 14px;
@@ -263,6 +263,12 @@ main>.section>div {
   max-width: 1440px;
   margin: auto;
   padding: 0 24px;
+}
+
+main > .section > div.default-content-wrapper {
+  max-width: 1104px;
+  margin:auto;
+  text-align: center;
 }
 
 main>.section:first-of-type {
